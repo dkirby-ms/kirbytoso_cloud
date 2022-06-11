@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "windowsAdminUsername": {
-            "value": "arcdemo"
+            "value": "<your Windows username>"
         },
         "windowsAdminPassword": {
-            "value": "ArcPassword123!!"
+            "value": "<your Windows password>"
         },
-        "domainName": {
-            "value": "kirbytoso.xyz"
+        "addsDomainName": {
+            "value": "<your domain name>"
         }
     }
 }
