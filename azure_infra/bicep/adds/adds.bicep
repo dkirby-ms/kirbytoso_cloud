@@ -29,9 +29,6 @@ param resourceTags object = {
 @description('The base URL used for accessing artifacts and automation artifacts.')
 param templateBaseUrl string
 
-@description('Choice to deploy Bastion to connect to the client VM')
-param deployBastion bool = false
-
 var networkInterfaceName = '${vmName}-NIC'
 var osDiskType = 'Premium_LRS'
 
@@ -116,4 +113,3 @@ resource vmBootstrap 'Microsoft.Compute/virtualMachines/extensions@2021-07-01' =
 }
 
 output adminUsername string = windowsAdminUsername
-output publicIP string = deployBastion == false ? concat(publicIpAddress.properties.ipAddress) : ''
