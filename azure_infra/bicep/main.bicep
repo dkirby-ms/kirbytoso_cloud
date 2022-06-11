@@ -7,6 +7,9 @@ param windowsAdminUsername string
 @secure()
 param windowsAdminPassword string
 
+@description('The domain name of your AD forest')
+param addsDomainName string = 'ArcBox-Domain'
+
 @description('Target GitHub account')
 param githubAccount string = 'dkirby-ms'
 
